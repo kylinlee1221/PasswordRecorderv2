@@ -9,7 +9,7 @@ public class DBMaster {
     private Context context;
     private SQLiteDatabase sqLiteDatabase;
     private DBOpenHelper dbOpenHelper;
-    private AccountInfoDBDao accountInfoDBDao;
+    public AccountInfoDBDao accountInfoDBDao;
     public DBMaster(Context context){
         this.context=context;
         accountInfoDBDao=new AccountInfoDBDao(context);

@@ -103,12 +103,12 @@ public class AccountInfoBean {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof AccountInfoBean)) return false;
-        AccountInfoBean that = (AccountInfoBean) o;
-        return Objects.equals(getUsername(), that.getUsername()) && Objects.equals(getPassword(), that.getPassword()) && Objects.equals(getSecurity(), that.getSecurity()) && Objects.equals(getRegister(), that.getRegister()) && Objects.equals(getOtherInfo(), that.getOtherInfo()) && Objects.equals(getDate(), that.getDate());
+        AccountInfoBean infoBean = (AccountInfoBean) o;
+        return Objects.equals(getUsername(), infoBean.getUsername()) && Objects.equals(getPassword(), infoBean.getPassword()) && Objects.equals(getRegister(), infoBean.getRegister());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getUsername(), getPassword(), getSecurity(), getRegister(), getOtherInfo(), getDate());
+        return Objects.hash(getUsername(), getPassword(), getSecurity(), getRegister(), getOtherInfo());
     }
 }

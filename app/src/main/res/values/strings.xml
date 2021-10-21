@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">PasswordRecorderv2</string>
+    <string name="FrontPage_Hello">Hello</string>
+    <string name="addInfo_Hint">Add Info</string>
+    <string name="viewInfo_Hint">View &amp; Edit Info</string>
+    <string name="addInPage_Hint">Must input with star sign</string>
+    <string name="Username_Title">Username: (*)</string>
+    <string name="Username_Hint">Input username here</string>
+    <string name="Password_Title">Password: (*)</string>
+    <string name="PasswordHint">Input password here</string>
+    <string name="Register_Place_Title">Register Place: (*)</string>
+    <string name="Register_Place_Hint">Input other place here</string>
+    <string name="PhoneNumber_Title">Phone number:</string>
+    <string name="PhoneNumber_Hint">Input phone number here</string>
+    <string name="OtherInfo_Title">Comments:</string>
+    <string name="OtherInfo_Hint">Input comments here</string>
+    <string name="Exists_Hint">Info already Exists</string>
+    <string-array name="register_Place">
+        <item>Google</item>
+        <item>Facebook</item>
+        <item>Outlook</item>
+        <item>Itunes</item>
+        <item>Amazon</item>
+        <item>QQ</item>
+        <item>163mail</item>
+        <item>Wechat</item>
+        <item>Sina</item>
+        <item>Baidu</item>
+        <item>Github</item>
+        <item>blizzard</item>
+        <item>Steam</item>
+        <item>Netease</item>
+        <item>other</item>
+    </string-array>
 </resources>

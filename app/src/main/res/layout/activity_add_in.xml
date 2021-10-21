@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddInActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_AddInPage_Title"
+        android:text="@string/addInPage_Hint"
+        android:textSize="19sp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_AddInPage_Title"
+        android:id="@+id/TV_Username_Title"
+        android:text="@string/Username_Title"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_Username_Title"
+        android:id="@+id/ET_Username_AddInPage"
+        android:hint="@string/Username_Hint"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_Username_AddInPage"
+        android:text="@string/Password_Title"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        android:id="@+id/TV_Password_Title"/>
+
+    <EditText
+        android:id="@+id/ET_Password_AddInPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_Password_Title"
+        android:drawableRight="@drawable/eye_close"
+        android:hint="@string/PasswordHint"
+        android:inputType="textPassword"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_Password_AddInPage"
+        android:text="@string/Register_Place_Title"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        android:id="@+id/TV_Register_Title"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_Register_Title"
+        android:scrollbarSize="15sp"
+        android:id="@+id/SP_RegisterPlace_Detail"
+        android:entries="@array/register_Place"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/ET_RegisterPlace_AddInPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SP_RegisterPlace_Detail"
+        android:hint="@string/Register_Place_Hint"
+        android:inputType="text"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_PhoneNumber_Title"
+        android:layout_below="@id/ET_RegisterPlace_AddInPage"
+        android:text="@string/PhoneNumber_Title"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_orange_dark"/>
+
+    <EditText
+        android:id="@+id/ET_PhoneNumber_AddInPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_PhoneNumber_Title"
+        android:hint="@string/PhoneNumber_Hint"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_OtherInfo_Title"
+        android:layout_below="@id/ET_PhoneNumber_AddInPage"
+        android:text="@string/OtherInfo_Title"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_orange_dark"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ET_OtherInfo_AddInPage"
+        android:layout_below="@id/TV_OtherInfo_Title"
+        android:hint="@string/OtherInfo_Hint"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BT_AddInfo_AddInPage"
+        android:layout_below="@id/ET_OtherInfo_AddInPage"
+        android:text="@string/addInfo_Hint"
+        android:background="@android:color/holo_blue_light"/>
+
+</RelativeLayout>
