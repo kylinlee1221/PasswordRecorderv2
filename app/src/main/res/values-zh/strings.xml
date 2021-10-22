@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PasswordRecorder</string>
+    <string name="app_name">密码记录本</string>
     <string name="FrontPage_Hello">Hello</string>
-    <string name="addInfo_Hint">Add Info</string>
-    <string name="viewInfo_Hint">View &amp; Copy Info</string>
+    <string name="addInfo_Hint">添加信息</string>
+    <string name="viewInfo_Hint">查看复制信息</string>
     <string name="addInPage_Hint">Must input with star sign</string>
     <string name="Username_Title">Username: (*)</string>
     <string name="Username_Hint">Input username here</string>

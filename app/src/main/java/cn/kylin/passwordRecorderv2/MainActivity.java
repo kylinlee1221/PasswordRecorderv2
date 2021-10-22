@@ -16,9 +16,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         DBMaster master=new DBMaster(getApplicationContext());
         master.openDataBase();
-        Button addInfo=findViewById(R.id.BT_AddInfo_Main);
+        Button addInfo=findViewById(R.id.BT_AddInfo_Main),viewEditInfo=findViewById(R.id.BT_View_Mod_Info);
         addInfo.setOnClickListener(click->{
             Intent intent=new Intent(this,AddInActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        viewEditInfo.setOnClickListener(click->{
+            Intent intent=new Intent(this, ViewCopyActivity.class);
             startActivity(intent);
             finish();
         });

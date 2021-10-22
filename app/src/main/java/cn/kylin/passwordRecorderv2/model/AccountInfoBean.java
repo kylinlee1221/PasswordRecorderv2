@@ -93,6 +93,13 @@ public class AccountInfoBean {
         this.username = username;
     }
 
+    @Override
+    public String toString() {
+        return "Username: " + username + '\n' +
+                "Register: " + register + '\n' +
+                "Date: " + date ;
+    }
+
     @NonNull
     @Override
     protected Object clone() throws CloneNotSupportedException {
