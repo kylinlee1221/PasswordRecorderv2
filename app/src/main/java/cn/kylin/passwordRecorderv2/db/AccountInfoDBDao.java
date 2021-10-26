@@ -91,4 +91,18 @@ public class AccountInfoDBDao {
         }
         return dataList;
     }
+    public long deleteAllData(){
+        return mDB.delete(Table_Name,null,null);
+    }
+    public long deleteDataByID(long id){
+        return mDB.delete(Table_Name,COL_Acc_ID+" = "+id,null);
+    }
+    public long updateDataByID(long id,AccountInfoBean newData){
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(COL_Acc_UserName,newData.getUsername());
+        contentValues.put(COL_Acc_Password,newData.getPassword());
+        contentValues.put(COL_Acc_Security,newData.getSecurity());
+        //contentValues.put(COL_Acc_Register_place,newData.getSecurity());
+        return mDB.update(Table_Name,contentValues,COL_Acc_ID+" = "+id,null);
+    }
 }

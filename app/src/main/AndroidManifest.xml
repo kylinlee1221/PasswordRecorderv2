@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PasswordRecorderv2">
         <activity
+            android:name=".ManageInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".ViewCopyActivity"
             android:exported="false" />
         <activity

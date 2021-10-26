@@ -3,6 +3,7 @@
     <string name="FrontPage_Hello">Hello</string>
     <string name="addInfo_Hint">Add Info</string>
     <string name="viewInfo_Hint">View &amp; Copy Info</string>
+    <string name="manageInfo_Btn">Manage Info</string>
     <string name="addInPage_Hint">Must input with star sign</string>
     <string name="Username_Title">Username: (*)</string>
     <string name="Username_Hint">Input username here</string>
@@ -22,8 +23,14 @@
     <string name="ViewEdit_Date">Register date: </string>
     <string name="ViewEdit_Password">Password: </string>
     <string name="CopyData_Title">Your Data Details: </string>
+    <string name="Manage_Title">Manage the Info</string>
+    <string name="Manage_Hint">Long click to check details</string>
+    <string name="Delete_Hint">Are you sure you want to delete this?</string>
+    <string name="Modify_Title">Modify your information here</string>
     <string name="Copy_Btn">Copy</string>
     <string name="Back_Btn">Back</string>
+    <string name="Delete_Btn">Delete</string>
+    <string name="Modify_Btn">Modify</string>
     <string-array name="register_Place">
         <item>Google</item>
         <item>Facebook</item>

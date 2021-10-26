@@ -32,4 +32,13 @@
         android:text="@string/viewInfo_Hint"
         android:background="@android:color/holo_blue_light"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BT_Manage_Main"
+        android:layout_below="@id/BT_View_Mod_Info"
+        android:text="@string/manageInfo_Btn"
+        android:background="@android:color/holo_blue_light"/>
+
+
 </RelativeLayout>
