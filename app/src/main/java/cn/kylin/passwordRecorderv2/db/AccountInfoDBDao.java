@@ -105,4 +105,96 @@ public class AccountInfoDBDao {
         //contentValues.put(COL_Acc_Register_place,newData.getSecurity());
         return mDB.update(Table_Name,contentValues,COL_Acc_ID+" = "+id,null);
     }
+    public ArrayList<AccountInfoBean> getByUsername(String username){
+        ArrayList<AccountInfoBean> dataList=new ArrayList<AccountInfoBean>();
+        if(mDB!=null){
+            Cursor cursor=mDB.rawQuery("select * from "+Table_Name+" where username like ?",new String[]{"%"+username+"%"});
+            if(cursor.moveToFirst()){
+                do{
+                    if(cursor.getColumnIndex(COL_Acc_UserName)!=-1&&cursor.getColumnIndex(COL_Acc_Password)!=-1&&cursor.getColumnIndex(COL_Acc_Security)!=-1&&cursor.getColumnIndex(COL_Acc_Register_place)!=-1&&cursor.getColumnIndex(COL_Acc_OtherInfo)!=-1&&cursor.getColumnIndex(COL_Acc_AddIn)!=-1&&cursor.getColumnIndex(COL_Acc_ID)!=-1){
+                        @SuppressLint("Range") long id=cursor.getLong(cursor.getColumnIndex(COL_Acc_ID));
+                        @SuppressLint("Range") String Username=cursor.getString(cursor.getColumnIndex(COL_Acc_UserName));
+                        @SuppressLint("Range") String password=cursor.getString(cursor.getColumnIndex(COL_Acc_Password));
+                        @SuppressLint("Range") String security=cursor.getString(cursor.getColumnIndex(COL_Acc_Security));
+                        @SuppressLint("Range") String register=cursor.getString(cursor.getColumnIndex(COL_Acc_Register_place));
+                        @SuppressLint("Range") String otherInfo=cursor.getString(cursor.getColumnIndex(COL_Acc_OtherInfo));
+                        @SuppressLint("Range") String date=cursor.getString(cursor.getColumnIndex(COL_Acc_AddIn));
+                        AccountInfoBean tempBean=new AccountInfoBean(id,Username,password,security,register,otherInfo,date);
+                        dataList.add(tempBean);
+                    }
+                }while (cursor.moveToNext());
+                cursor.close();
+            }
+        }
+        return dataList;
+    }
+    public ArrayList<AccountInfoBean> getByWebsite(String website){
+        ArrayList<AccountInfoBean> dataList=new ArrayList<AccountInfoBean>();
+        if(mDB!=null){
+            Cursor cursor=mDB.rawQuery("select * from "+Table_Name+" where register like ?",new String[]{"%"+website+"%"});
+            if(cursor.moveToFirst()){
+                do{
+                    if(cursor.getColumnIndex(COL_Acc_UserName)!=-1&&cursor.getColumnIndex(COL_Acc_Password)!=-1&&cursor.getColumnIndex(COL_Acc_Security)!=-1&&cursor.getColumnIndex(COL_Acc_Register_place)!=-1&&cursor.getColumnIndex(COL_Acc_OtherInfo)!=-1&&cursor.getColumnIndex(COL_Acc_AddIn)!=-1&&cursor.getColumnIndex(COL_Acc_ID)!=-1){
+                        @SuppressLint("Range") long id=cursor.getLong(cursor.getColumnIndex(COL_Acc_ID));
+                        @SuppressLint("Range") String Username=cursor.getString(cursor.getColumnIndex(COL_Acc_UserName));
+                        @SuppressLint("Range") String password=cursor.getString(cursor.getColumnIndex(COL_Acc_Password));
+                        @SuppressLint("Range") String security=cursor.getString(cursor.getColumnIndex(COL_Acc_Security));
+                        @SuppressLint("Range") String register=cursor.getString(cursor.getColumnIndex(COL_Acc_Register_place));
+                        @SuppressLint("Range") String otherInfo=cursor.getString(cursor.getColumnIndex(COL_Acc_OtherInfo));
+                        @SuppressLint("Range") String date=cursor.getString(cursor.getColumnIndex(COL_Acc_AddIn));
+                        AccountInfoBean tempBean=new AccountInfoBean(id,Username,password,security,register,otherInfo,date);
+                        dataList.add(tempBean);
+                    }
+                }while (cursor.moveToNext());
+                cursor.close();
+            }
+        }
+        return dataList;
+    }
+    public ArrayList<AccountInfoBean> getByDate(String AddDate){
+        ArrayList<AccountInfoBean> dataList=new ArrayList<AccountInfoBean>();
+        if(mDB!=null){
+            Cursor cursor=mDB.rawQuery("select * from "+Table_Name+" where date = ?",new String[]{AddDate});
+            if(cursor.moveToFirst()){
+                do{
+                    if(cursor.getColumnIndex(COL_Acc_UserName)!=-1&&cursor.getColumnIndex(COL_Acc_Password)!=-1&&cursor.getColumnIndex(COL_Acc_Security)!=-1&&cursor.getColumnIndex(COL_Acc_Register_place)!=-1&&cursor.getColumnIndex(COL_Acc_OtherInfo)!=-1&&cursor.getColumnIndex(COL_Acc_AddIn)!=-1&&cursor.getColumnIndex(COL_Acc_ID)!=-1){
+                        @SuppressLint("Range") long id=cursor.getLong(cursor.getColumnIndex(COL_Acc_ID));
+                        @SuppressLint("Range") String Username=cursor.getString(cursor.getColumnIndex(COL_Acc_UserName));
+                        @SuppressLint("Range") String password=cursor.getString(cursor.getColumnIndex(COL_Acc_Password));
+                        @SuppressLint("Range") String security=cursor.getString(cursor.getColumnIndex(COL_Acc_Security));
+                        @SuppressLint("Range") String register=cursor.getString(cursor.getColumnIndex(COL_Acc_Register_place));
+                        @SuppressLint("Range") String otherInfo=cursor.getString(cursor.getColumnIndex(COL_Acc_OtherInfo));
+                        @SuppressLint("Range") String date=cursor.getString(cursor.getColumnIndex(COL_Acc_AddIn));
+                        AccountInfoBean tempBean=new AccountInfoBean(id,Username,password,security,register,otherInfo,date);
+                        dataList.add(tempBean);
+                    }
+                }while (cursor.moveToNext());
+                cursor.close();
+            }
+        }
+        return dataList;
+    }
+    public ArrayList<AccountInfoBean> getByPhoneNumber(String phoneNum){
+        ArrayList<AccountInfoBean> dataList=new ArrayList<AccountInfoBean>();
+        if(mDB!=null){
+            Cursor cursor=mDB.rawQuery("select * from "+Table_Name+" where security like ?",new String[]{"%"+phoneNum+"%"});
+            if(cursor.moveToFirst()){
+                do{
+                    if(cursor.getColumnIndex(COL_Acc_UserName)!=-1&&cursor.getColumnIndex(COL_Acc_Password)!=-1&&cursor.getColumnIndex(COL_Acc_Security)!=-1&&cursor.getColumnIndex(COL_Acc_Register_place)!=-1&&cursor.getColumnIndex(COL_Acc_OtherInfo)!=-1&&cursor.getColumnIndex(COL_Acc_AddIn)!=-1&&cursor.getColumnIndex(COL_Acc_ID)!=-1){
+                        @SuppressLint("Range") long id=cursor.getLong(cursor.getColumnIndex(COL_Acc_ID));
+                        @SuppressLint("Range") String Username=cursor.getString(cursor.getColumnIndex(COL_Acc_UserName));
+                        @SuppressLint("Range") String password=cursor.getString(cursor.getColumnIndex(COL_Acc_Password));
+                        @SuppressLint("Range") String security=cursor.getString(cursor.getColumnIndex(COL_Acc_Security));
+                        @SuppressLint("Range") String register=cursor.getString(cursor.getColumnIndex(COL_Acc_Register_place));
+                        @SuppressLint("Range") String otherInfo=cursor.getString(cursor.getColumnIndex(COL_Acc_OtherInfo));
+                        @SuppressLint("Range") String date=cursor.getString(cursor.getColumnIndex(COL_Acc_AddIn));
+                        AccountInfoBean tempBean=new AccountInfoBean(id,Username,password,security,register,otherInfo,date);
+                        dataList.add(tempBean);
+                    }
+                }while (cursor.moveToNext());
+                cursor.close();
+            }
+        }
+        return dataList;
+    }
 }

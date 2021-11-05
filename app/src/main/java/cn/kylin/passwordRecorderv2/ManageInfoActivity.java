@@ -4,8 +4,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -92,6 +94,16 @@ public class ManageInfoActivity extends AppCompatActivity {
             }).create().show();
             return true;
         });
+    }
+
+    @Override
+    public boolean onKeyDown(int KC, KeyEvent KE){
+        if(KC==KeyEvent.KEYCODE_BACK){
+            Intent intent=new Intent(this,MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        return true;
     }
 
     protected class infoAdapter extends BaseAdapter {

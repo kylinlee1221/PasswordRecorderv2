@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchInfoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_SearchInfo_Title"
+        android:text="@string/SearchInfo_Title"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_SearchInfo_Title"
+        android:id="@+id/TV_SearchInfo_Hint"
+        android:text="@string/SearchInfo_Hint"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LL_SearchBanner_Mid"
+        android:orientation="horizontal"
+        android:layout_below="@id/TV_SearchInfo_Hint">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/SP_SearchCategory"
+            android:entries="@array/search_category"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textSize="12sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ET_SearchInfo_Detail"
+            android:inputType="text"
+            android:hint="@string/SearchInfoHint"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:id="@+id/BT_DatePicker"
+            android:text="@string/SearchInfo_DatePicker"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/SP_WebPlace_Search"
+            android:entries="@array/register_Place"
+            android:spinnerMode="dropdown"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL_SearchBanner_Mid"
+        android:id="@+id/BT_SearchInfo"
+        android:text="@string/Search_Btn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BT_SearchInfo"
+        android:id="@+id/TV_SearchInfo_Result"
+        android:text="@string/SearchInfo_Result"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_SearchInfo_Result"
+        android:id="@+id/LV_SearchResult"
+        android:transcriptMode="alwaysScroll"/>
+
+</RelativeLayout>

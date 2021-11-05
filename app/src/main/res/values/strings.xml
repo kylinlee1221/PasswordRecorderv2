@@ -4,6 +4,7 @@
     <string name="addInfo_Hint">Add Info</string>
     <string name="viewInfo_Hint">View &amp; Copy Info</string>
     <string name="manageInfo_Btn">Manage Info</string>
+    <string name="searchInfo_Btn">Search Info</string>
     <string name="addInPage_Hint">Must input with star sign</string>
     <string name="Username_Title">Username: (*)</string>
     <string name="Username_Hint">Input username here</string>
@@ -31,6 +32,12 @@
     <string name="Back_Btn">Back</string>
     <string name="Delete_Btn">Delete</string>
     <string name="Modify_Btn">Modify</string>
+    <string name="SearchInfo_Title">Search Info Page</string>
+    <string name="SearchInfo_Hint">Select Search by what and click search button</string>
+    <string name="SearchInfoHint">Enter search detail</string>
+    <string name="SearchInfo_DatePicker">click to chose date</string>
+    <string name="Search_Btn">Search</string>
+    <string name="SearchInfo_Result">Result list</string>
     <string-array name="register_Place">
         <item>Google</item>
         <item>Facebook</item>
@@ -47,5 +54,11 @@
         <item>Steam</item>
         <item>Netease</item>
         <item>other</item>
+    </string-array>
+    <string-array name="search_category">
+        <item>username</item>
+        <item>register place</item>
+        <item>phone number</item>
+        <item>add in date</item>
     </string-array>
 </resources>

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         DBMaster master=new DBMaster(getApplicationContext());
         master.openDataBase();
-        Button addInfo=findViewById(R.id.BT_AddInfo_Main),viewEditInfo=findViewById(R.id.BT_View_Mod_Info),manageInfo=findViewById(R.id.BT_Manage_Main);
+        Button addInfo=findViewById(R.id.BT_AddInfo_Main),viewEditInfo=findViewById(R.id.BT_View_Mod_Info),manageInfo=findViewById(R.id.BT_Manage_Main),searchInfo=findViewById(R.id.BT_Search_Main);
         addInfo.setOnClickListener(click->{
             Intent intent=new Intent(this,AddInActivity.class);
             startActivity(intent);
@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
         });
         manageInfo.setOnClickListener(click->{
             Intent intent=new Intent(this,ManageInfoActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        searchInfo.setOnClickListener(click->{
+            Intent intent=new Intent(this,SearchInfoActivity.class);
             startActivity(intent);
             finish();
         });
