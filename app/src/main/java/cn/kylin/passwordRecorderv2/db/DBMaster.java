@@ -37,6 +37,10 @@ public class DBMaster {
             AccountInfoDBDao.COL_Acc_OtherInfo+" TEXT,"+
             AccountInfoDBDao.COL_Acc_AddIn+" TEXT)";
     private static final String AccountSqlDropStr="DROP TABLE IF EXISTS "+AccountInfoDBDao.Table_Name;
+    public void DropTable(){
+        sqLiteDatabase.execSQL(AccountSqlDropStr);
+        sqLiteDatabase.execSQL(AccountSqlStr);
+    }
     public static class DBOpenHelper extends SQLiteOpenHelper{
 
         public DBOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory,int version){
@@ -53,5 +57,6 @@ public class DBMaster {
             db.execSQL(AccountSqlDropStr);
             onCreate(db);
         }
+
     }
 }

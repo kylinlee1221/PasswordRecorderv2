@@ -38,6 +38,11 @@
     <string name="SearchInfo_DatePicker">click to chose date</string>
     <string name="Search_Btn">Search</string>
     <string name="SearchInfo_Result">Result list</string>
+    <string name="exit_hint">Double back to exit</string>
+    <string name="ExistInfo_Hint">You have %1$s in database</string>
+    <string name="Backup_Btn">Backup</string>
+    <string name="Restore_Btn">Restore</string>
+    <string name="Backup_Restore_Btn">Backup &amp; Restore</string>
     <string-array name="register_Place">
         <item>Google</item>
         <item>Facebook</item>

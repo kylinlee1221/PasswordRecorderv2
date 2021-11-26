@@ -48,4 +48,12 @@
         android:text="@string/searchInfo_Btn"
         android:background="@android:color/holo_blue_light"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BT_BR_Main"
+        android:layout_below="@id/BT_Search_Main"
+        android:text="@string/Backup_Restore_Btn"
+        android:background="@android:color/holo_blue_light"/>
+
 </RelativeLayout>

@@ -39,6 +39,7 @@
     <string name="SearchInfo_DatePicker">click to chose date</string>
     <string name="Search_Btn">Search</string>
     <string name="SearchInfo_Result">Result list</string>
+    <string name="exit_hint">Double back to exit</string>
     <string-array name="register_Place">
         <item>Google</item>
         <item>Facebook</item>

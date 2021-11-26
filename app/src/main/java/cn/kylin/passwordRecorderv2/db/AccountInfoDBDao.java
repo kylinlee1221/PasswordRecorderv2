@@ -55,6 +55,18 @@ public class AccountInfoDBDao {
         }
         return resultId;
     }
+    public long insertDataByRestore(AccountInfoBean bean){
+        long resultId;
+        ContentValues values=new ContentValues();
+        values.put(COL_Acc_UserName,bean.getUsername());
+        values.put(COL_Acc_Password,bean.getPassword());
+        values.put(COL_Acc_Security,bean.getSecurity());
+        values.put(COL_Acc_Register_place,bean.getRegister());
+        values.put(COL_Acc_OtherInfo,bean.getOtherInfo());
+        values.put(COL_Acc_AddIn,bean.getDate());
+        resultId=mDB.insert(Table_Name,null,values);
+        return resultId;
+    }
     public boolean isExists(AccountInfoBean bean){
         infoList=getAllData();
         if(infoList.size()==0){
@@ -196,5 +208,8 @@ public class AccountInfoDBDao {
             }
         }
         return dataList;
+    }
+    public void dropTB(){
+        mDB.execSQL("DROP TABLE IF EXISTS "+Table_Name);
     }
 }
