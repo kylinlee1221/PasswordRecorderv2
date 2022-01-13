@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/StudioProject/PasswordRecorder/app/src/main/res/layout/activity_backup_restore.xml" value="0.20625" />
+        <entry key="..\:/StudioProject/PasswordRecorder/app/src/main/res/layout/activity_main.xml" value="0.2046875" />
+        <entry key="..\:/StudioProject/PasswordRecorder/app/src/main/res/layout/activity_manage_info.xml" value="0.20625" />
+        <entry key="..\:/StudioProject/PasswordRecorder/app/src/main/res/layout/activity_search_info.xml" value="0.20625" />
+        <entry key="..\:/StudioProject/PasswordRecorder/app/src/main/res/layout/activity_view_copy.xml" value="0.20625" />
+        <entry key="..\:/StudioProject/PasswordRecorder/app/src/main/res/layout/copy_list_resource.xml" value="0.20625" />
+        <entry key="..\:/StudioProject/PasswordRecorder/app/src/main/res/layout/modify_list_resource.xml" value="0.20625" />
+        <entry key="..\:/StudioProject/PasswordRecorder/app/src/main/res/layout/show_list_resource.xml" value="0.20625" />
+        <entry key="..\:/StudioProject/PasswordRecorder/app/src/main/res/layout/show_qrcode_view.xml" value="0.11730072463768115" />
         <entry key="..\:/work/studioproject/PasswordRecorderv2/app/src/main/res/layout/activity_add_in.xml" value="0.2046875" />
         <entry key="..\:/work/studioproject/PasswordRecorderv2/app/src/main/res/layout/activity_backup_restore.xml" value="0.2046875" />
         <entry key="..\:/work/studioproject/PasswordRecorderv2/app/src/main/res/layout/activity_main.xml" value="0.17572463768115942" />

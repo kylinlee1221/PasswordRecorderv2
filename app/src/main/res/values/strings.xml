@@ -2,7 +2,7 @@
     <string name="app_name">PasswordRecorder</string>
     <string name="FrontPage_Hello">Hello</string>
     <string name="addInfo_Hint">Add Info</string>
-    <string name="viewInfo_Hint">View &amp; Copy Info</string>
+    <string name="viewInfo_Hint">View &amp; Copy &amp; Share Info</string>
     <string name="manageInfo_Btn">Manage Info</string>
     <string name="searchInfo_Btn">Search Info</string>
     <string name="addInPage_Hint">Must input with star sign</string>
@@ -17,11 +17,11 @@
     <string name="OtherInfo_Title">Comments:</string>
     <string name="OtherInfo_Hint">Input comments here</string>
     <string name="Exists_Hint">Info already Exists</string>
-    <string name="ViewEdit_Title">View &amp; Copy the Info</string>
+    <string name="ViewEdit_Title">View &amp; Copy &amp; Share the Info</string>
     <string name="ViewEdit_Hint">Long click to check details</string>
     <string name="ViewEdit_Username">Username: </string>
     <string name="ViewEdit_Register">Register place: </string>
-    <string name="ViewEdit_Date">Register date: </string>
+    <string name="ViewEdit_Date">Add in date: </string>
     <string name="ViewEdit_Password">Password: </string>
     <string name="CopyData_Title">Your Data Details: </string>
     <string name="Manage_Title">Manage the Info</string>
@@ -30,6 +30,8 @@
     <string name="Modify_Title">Modify your information here</string>
     <string name="Copy_Btn">Copy</string>
     <string name="Back_Btn">Back</string>
+    <string name="Share_Btn">Share</string>
+    <string name="Save_Btn">Save</string>
     <string name="Delete_Btn">Delete</string>
     <string name="Modify_Btn">Modify</string>
     <string name="SearchInfo_Title">Search Info Page</string>
@@ -43,6 +45,7 @@
     <string name="Backup_Btn">Backup</string>
     <string name="Restore_Btn">Restore</string>
     <string name="Backup_Restore_Btn">Backup &amp; Restore</string>
+    <string name="QRCode_hint">Your QRCode is ready</string>
     <string-array name="register_Place">
         <item>Google</item>
         <item>Facebook</item>
